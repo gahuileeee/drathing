@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+#title{
+    text-align: center;
+    font-family: 'Finger Paint', ����;
+    background-color: rgb(255, 243, 224);
+}
+h1 {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.pink-text {
+    color: pink;
+}
+
+.green-text {
+    color: rgb(146, 231, 146);
+}
+#nav{
+    font-family: 'Finger Paint', ����;
+    height: 55px;
+    background-color: pink;
+    text-align: right;
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-container img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* �̹��� ���� ���� �� ũ�� ���� */
+}
+h5{
+    font-family: 'Finger Paint', ����;
+}
+
+#button1 {
+    border: none; /* �׵θ� ���� */
+    padding: 0; /* ���� ���� ���� */
+    background: none; /* ��� ���� */
+    color: inherit; /* �θ� ����� �ؽ�Ʈ ���� ��� */
+    cursor: pointer;
+    text-decoration: underline; /* �ؽ�Ʈ�� ���� �߰� */
+    font-size: inherit; /* �θ� ����� ��Ʈ ũ�� ��� */
+    margin: 0; /* ���� ���� */
+}
+#button2{
+    border: none;
+    padding: 0px 5px;
+    margin-right : 25px;
+    background: pink;
+    color: white;
+    cursor: pointer;
+    font-size: inherit;
+    height: 20px;
+    box-sizing : border-box;
+    flex-grow: 1;
+}
+
+#context {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 243, 224);
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+.subject, .person {
+    font-family: 'Finger Paint', ����;
+    margin: 5px 0;
+}
+
+.like-button {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.heart-icon {
+    color: #FF1493; /* Pink color for heart icon */
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.like-text {
+    font-weight: bold;
+}
+/* ��� ��Ÿ�� */
+#comment-section {
+    margin-top: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comments-container {
+    margin-top: 10px;
+}
+
+
+/* ��� �Է� �� ��Ÿ�� */
+#comment-form {
+    margin-top: 20px;
+    display: flex;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* ��Ÿ ��Ÿ�� */
+#context {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    margin-bottom:20px;
+    background-color: rgb(255, 243, 224);
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    height: 60%;
+    background-color: white;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 90%;
+    object-fit: cover;
+}
+
+.subject, .person {
+    font-family: 'Finger Paint', ����;
+    margin: 5px 0;
+}
+
+.like-button {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left:5px;
+}
+
+.heart-icon {
+    color: #FF1493;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.like-text {
+    font-weight: bold;
+}
+
+#comments > div{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #adabab;
+    border-top: 1px solid #adabab;
+    margin-bottom: 5px;
+}
+#comments> div>p:nth-child(1){
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    font-size: 14px;
+    font-family: 'Finger Paint', ����;
+}
+#comments> div>p:nth-child(2){
+    position: absolute;
+    left: 150px;
+    font-size: 14px;
+}

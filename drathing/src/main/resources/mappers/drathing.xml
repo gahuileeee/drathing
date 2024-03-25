@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.drathing.mapper.DrathingMapper">
+
+    <!-- comment -->
+    <insert id="insertCommentDTO">
+        INSERT INTO `comments` VALUES (null ,#{number},#{comment_id},#{content});
+    </insert>
+
+    <select id="selectCommentDTOs" resultType="com.drathing.dto.CommentDTO">
+        SELECT * FROM `comments` WHERE `number` = #{value};
+    </select>
+
+    <select id="selectCommentDTO" resultType="com.drathing.dto.CommentDTO">
+        SELECT * FROM `comments` WHERE `pk` = #{pk} ;
+    </select>
+
+    <update id="updateCommentDTO">
+        UPDATE `comments` SET
+        `content`= #{content}
+        WHERE `pk` = #{pk};
+    </update>
+
+    <delete id="deleteCommentDTO">
+        DELETE FROM `comments` WHERE `seq` = #{seq} ;
+    </delete>
+
+    <!-- keyword -->
+    <insert id="insertKeywordDTO">
+        INSERT INTO `keywords` VALUES (null ,#{name});
+    </insert>
+
+    <select id="selectKeywordDTO" resultType="com.drathing.dto.KeywordDTO">
+        SELECT * FROM `keywords` ORDER BY RAND() LIMIT 1;
+    </select>
+
+    <select id="selectKeywordDTOByName" resultType="com.drathing.dto.KeywordDTO">
+        SELECT * FROM `keywords` WHERE `name` = #{name};
+    </select>
+
+
+    <!-- Print -->
+    <select id="selectPrintDTO" resultType="com.drathing.dto.PrintDTO">
+        SELECT * FROM `print` WHERE `number` = #{number};
+    </select>
+
+    <select id="selectPrintDTOs" resultType="com.drathing.dto.PrintDTO">
+        SELECT * FROM `print` ORDER BY `number` DESC;
+    </select>
+
+    <select id="selectPrintDTOPrint" resultType="com.drathing.dto.PrintDTO">
+        SELECT * FROM `print` WHERE `printing` = #{printing};
+    </select>
+
+    <insert id="insertPrintDTO" >
+        INSERT INTO `print` VALUES (null, #{name}, #{printing}, #{user}, 0);
+    </insert>
+
+    <update id="updatePrintDTO" >
+        UPDATE `print` SET
+        `like`=#{like}
+         WHERE `number`= #{number};
+    </update>
+
+
+    <!-- User -->
+    <select id="selectUserDTO" resultType="com.drathing.dto.UserDTO">
+        SELECT * FROM `user` WHERE `uid` = #{uid};
+    </select>
+
+    <insert id="insertUserDTO">
+        INSERT INTO `user` VALUES (#{uid},#{upassword});
+    </insert>
+
+    <!-- page -->
+    <select id="selectCountTotal" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM `print`;
+    </select>
+
+    <select id="selectPrintDTOLimit" resultType="com.drathing.dto.PrintDTO" >
+        SELECT * FROM `print` ORDER BY `number` DESC LIMIT #{start} , 12;
+    </select>
+</mapper>
