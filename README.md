@@ -35,8 +35,7 @@ STS3, JSP, HTML5, CSS3, MySQL, MyBatis, JavaScript , AWS
 이를 통해 cookie와 session 개념을 익힐 수 있었습니다. 또한 아무 값이나 session에 저장하게 되면 server 부담이 늘어나게 되니, &nbsp;
 어느 시점에서 session을 시작하고, 어떻게 종료하면 좋을지를 생각하며 session 관리의 중요성을 알 수 있었습니다. &nbsp;
 
-✏️기본 CRUD programing을 학습할 수 있었습니다. 댓글 삭제, 그림 등록 등을 통해 date 를 insert, delete하고 불러오는 것을 체득화하였습니다. &nbsp;
-이 프로젝트로 이제 간단한 data 처리를 하는 것에 자신감이 생겼습니다. &nbsp;
+✏️기본 CRUD programing을 학습할 수 있었습니다. 처음에는 요렁 없이 순수 JDBC 만으로 작업을 하였습니다. connection을 난발하고 이를 close 하지 않아 프로그램이 여러 차례 종료되기도 하였으나, 오히려 그래서 기본 원리를 학습할 수 있었습니다. 그 이후 프로젝트를 완성한 후 method에 하드코딩 했던 JDBC connection code를 method화 하여 클린 코드로 향상시키는 법과, myBatis를 학습한 후 이 프로젝트에 적용하여 기존 프로그램에 새로운 기술을 접목하는 법을 배울 수 있었습니다.
 
 ✏️개발 기초를 이해하게 되었습니다. 사실 기초 강의를 듣기만 하였을 때는 MVC 패턴도 제건 어렵기만 하였습니다. &nbsp;
 하지만 controller에 요청주소를 보내면, 올바른 view를 보내는 것부터 시작하여 점차 model을 통해 controller와 view에서 data를 주고받으며 MVC 패턴을 이해할 수 있었습니다. &nbsp;
