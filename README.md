@@ -16,10 +16,6 @@ STS3, JSP, HTML5, CSS3, MySQL, MyBatis, JavaScript , AWS
 
 ---
 
-### 시연 영상
-
-<img src="https://github.com/gahuileeee/drathing/assets/141610403/b804da4f-e7ff-4557-9af6-ae54da7660bc">
----
 
 ### 주요 기능 
 
@@ -32,6 +28,13 @@ STS3, JSP, HTML5, CSS3, MySQL, MyBatis, JavaScript , AWS
 :four: 사용자 간 상호작용: 사용자들은 서로의 그림을 볼 수 있고, 좋아요를 누르거나 댓글을 달아 다른 사용자들과 소통할 수 있습니다.&nbsp;
 
 ----
+
+### 시연 영상
+
+<img src="https://github.com/gahuileeee/drathing/assets/141610403/b804da4f-e7ff-4557-9af6-ae54da7660bc" width="700px">
+
+---
+
 
 ### 프로젝트를 통해 학습하게 된 내용
 
