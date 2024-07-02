@@ -31,7 +31,7 @@ STS3, JSP, HTML5, CSS3, MySQL, MyBatis, JavaScript , AWS
 
 ### 시연 영상
 
-<img src="" width="700px">
+<img src="https://github.com/gahuileeee/drathing/assets/141610403/2ab1d247-8ccd-4dab-9c83-092e9f73b5a5" width="700px">
 
 ---
 
