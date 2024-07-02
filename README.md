@@ -16,6 +16,10 @@ STS3, JSP, HTML5, CSS3, MySQL, MyBatis, JavaScript , AWS
 
 ---
 
+### 시연 영상
+
+<img src="https://github.com/gahuileeee/drathing/assets/141610403/b804da4f-e7ff-4557-9af6-ae54da7660bc">
+---
 
 ### 주요 기능 
 
